@@ -1,0 +1,10 @@
+<IfModule mod_expires.c>
+	### aktivace modulu mod_expires
+	ExpiresActive On
+  <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+	Header set Cache-Control "max-age= 2592000, public"
+	</FilesMatch>
+</IfModule>
+#Komprese
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+

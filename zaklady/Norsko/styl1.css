@@ -1,0 +1,24 @@
+/* Stylový soubor prezentace Dovolená v Norsku */
+p {
+    color: blue;
+}
+.dvojite-radkovani {
+    line-height: 2.0;
+}
+.teckovany-ramecek p{
+    border: #000 dotted 1px;
+}
+.localformat1{
+    color: rgb(15, 134, 65);
+    font-size: 13pt;
+    font-family: Verdana;
+    font-style: italic;
+}
+h1 {
+    color:#0c6a70;
+    font-size: 20pt;
+    text-align: center;
+}
+img{
+    border: 1px #000 solid;
+}

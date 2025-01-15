@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="Den">
+    </table>
+</body>
+<script>
+    const tydenPole = new Array("Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle");
+    let den = "<tr><th>Den</th><th>Název</th></tr>";
+    for (i = 0; i < 7; i++) {
+        den += "<tr><td>"+ (i+1) +"</td><td>" + tydenPole[i] + "</td></tr>";
+        document.getElementById("Den").innerHTML = den;
+    }
+</script>
+
+</html>

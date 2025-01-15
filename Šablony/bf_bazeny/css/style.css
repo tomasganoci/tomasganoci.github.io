@@ -33,7 +33,7 @@ ul {
 	line-height: 1.5;
 	list-style-type: none;
 }
-article, aside, details, figcaption, figure, footer, header, nav, section, summary, {
+article, aside, details, figcaption, figure, footer, header, nav, section, summary {
 	display: block;
 }
 /** Body **/

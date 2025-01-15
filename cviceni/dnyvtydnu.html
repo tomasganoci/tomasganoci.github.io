@@ -10,12 +10,28 @@
 <body>
     <table id="Den">
     </table>
+    <hr>
+    <table>
+        <tr>
+            <th>Den</th>
+            <th>Název</th>
+        </tr>
+        <script>
+            const tydenPole1 = new Array("Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle");
+            for (i = 0; i < 7; i++) {
+                document.write("<tr>");
+                document.write("<td>" + (i + 1) + "</td>");
+                document.write("<td>" + tydenPole1[i] + "</td>");
+                document.write("</tr>");
+            }
+        </script>
+    </table>
 </body>
 <script>
     const tydenPole = new Array("Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle");
     let den = "<tr><th>Den</th><th>Název</th></tr>";
     for (i = 0; i < 7; i++) {
-        den += "<tr><td>"+ (i+1) +"</td><td>" + tydenPole[i] + "</td></tr>";
+        den += "<tr><td>" + (i + 1) + "</td><td>" + tydenPole[i] + "</td></tr>";
         document.getElementById("Den").innerHTML = den;
     }
 </script>

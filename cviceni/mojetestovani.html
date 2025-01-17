@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid hsl(310, 100%, 50%)
+        }
+
+        #Den {
+            border-collapse: collapse
+        }
+    </style>
+</head>
+
+<body>
+    <div id="form">
+
+        <label for="submitbutton">submitButton</label>
+        <button name="submitbutton" type="submit" form="form">submitButton</button>
+        <form id="form" oninput="vysledek.value=parseInt(range.value)+parseInt(number.value)">
+            <label for="text">Text:</label>
+            <input type="text" id="text" name="text"><br>
+            <fieldset>
+                <legend>Radio</legend>
+                <label for="radio1">Radio 1:</label>
+                <input type="radio" id="radio1" name="radio" value="radio1"><br>
+                <label for="radio2">Radio 2:</label>
+                <input type="radio" id="radio2" name="radio" value="radio2"><br>
+                <label for="radio3">Radio 3:</label>
+                <input type="radio" id="radio3" name="radio" value="radio3"><br>
+            </fieldset>
+            <label for="checkbox">Checkbox:</label>
+            <input type="checkbox" id="checkbox" name="checkbox"><br>
+            <label for="file">File:</label>
+            <input type="file" name="file" id="file">
+            <fieldset>
+                <legend>Buttons</legend>
+                <label for="submit">inputSubmit:</label>
+                <input type="submit" id="submit" name="submit"><br>
+                <label for="button">inputButton:</label>
+                <input type="button" value="valueButton" id="button" name="button"><br>
+                <label for="button">Button</label>
+                <button name="button" type="button" onclick="alert('Button')">Button</button><br>
+                <label for="reset">Reset</label>
+                <button type="reset">buttonReset</button><br>
+                <label for="buttonFormAction">buttonFormAction</label>
+                <button type="submit" formaction="URL">FormActionURL</button><br>
+                <label for="image">Image</label>
+                <input id="image" name="image" type="image" src="../1.jpg" alt="image" height="300"><br>
+            </fieldset><br>
+            <input type="color" name="color" id="color"><br>
+            <input type="date" name="date" id="date" max="2025-01-15"><br>
+            <input type="datetime-local" name="datetime" id="datetime"><br>
+            <input type="search" name="search" id="search"><br>
+            <fieldset>
+                <legend>Select</legend>
+                <label for="select">Select</label>
+                <select name="select" id="select"> <!-- size="0" multiple -->
+                    <optgroup label="Optgroup">
+                        <option value="select1">Select 1</option>
+                        <option value="select2">Select 2</option>
+                    </optgroup>
+                    <option value="select3">Select 3</option>
+                    <option value="select4">Select 4</option>
+                    <option value="select5">Select 5</option>
+                </select><br>
+            </fieldset>
+            <label for="textarea">Textarea</label>
+            <textarea name="textarea" id="textarea" rows="3" cols="10"></textarea><br>
+            <label for="list">List</label>
+            <input id="list" list="datalist">
+            <datalist id="datalist">
+                <option value="listValue1">List Value 1</option>
+                <option value="listValue2">List Value 2</option>
+                <option value="listValue3">List Value 3</option>
+                <option value="listValue4">List Value 4</option>
+                <option value="listValue5">List Value 5</option>
+            </datalist><br>
+            <fieldset>
+                <legend>Output</legend>
+                <input type="range" name="range" id="range" value="50"><br>
+                <input type="number" name="number" id="number" value="30"><br>
+                <output name="vysledek" for="range number"></output>
+            </fieldset>
+        </form>
+    </div>
+    <hr>
+    <form name="kalkulacka">
+        <label for="cislo1">Číslo 1:</label>
+        <input type="number" name="cislo1"><br>
+        <label for="cislo2">Číslo 2:</label>
+        <input type="number" name="cislo2"><br>
+        <label for="vysledek">Výsledek:</label>
+        <input type="text" name="vysledek"><br>
+        <input type="button" value="+" name="plus"
+            onclick="Kalkulacka(kalkulacka.cislo1.value,kalkulacka.cislo2.value,kalkulacka.plus.defaultValue)">
+        <input type="button" value="-" name="minus"
+            onclick="Kalkulacka(kalkulacka.cislo1.value,kalkulacka.cislo2.value,kalkulacka.minus.defaultValue)">
+        <input type="button" value="*" name="krat"
+            onclick="Kalkulacka(kalkulacka.cislo1.value,kalkulacka.cislo2.value,kalkulacka.krat.defaultValue)">
+        <input type="button" value="/" name="deleno"
+            onclick="Kalkulacka(kalkulacka.cislo1.value,kalkulacka.cislo2.value,kalkulacka.deleno.defaultValue)">
+    </form>
+    <hr>
+    <form name="secti">
+        <label for="cislo1">Zadej číslo 1:</label>
+        <input type="number" name="cislo1"><br>
+        <label for="cislo2">Zadej číslo 2:</label>
+        <input type="number" name="cislo2"><br>
+        <input type="number" name="soucet">
+        <button type="button" onclick="Secti(secti.cislo1.value, secti.cislo2.value)">Sečti</button>
+    </form>
+    <hr>
+    <form name="form2">
+        <input type="text" name="tpole2">
+    </form>
+    <button onclick="NaplneniPole()">Naplň pole</button>
+    <hr>
+    <form name="form1">
+        <input type="text" name="tpole1">
+    </form>
+    <hr>
+    <button onclick="Zavri()">Zavří</button>
+    <hr>
+    <button onclick="OtevriOdkaz()">Otevří odkaz</button>
+    <hr>
+    <table id="Den">
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <th>Den</th>
+            <th>Název</th>
+        </tr>
+        <script>
+            const tydenPole1 = new Array("Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle");
+            for (i = 0; i < 7; i++) {
+                document.write("<tr>");
+                document.write("<td>" + (i + 1) + "</td>");
+                document.write("<td>" + tydenPole1[i] + "</td>");
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+<script>
+    const tydenPole = new Array("Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota", "Neděle");
+    let den = "<tr><th>Den</th><th>Název</th></tr>";
+    for (i = 0; i < 7; i++) {
+        den += "<tr><td>" + (i + 1) + "</td><td>" + tydenPole[i] + "</td></tr>";
+        document.getElementById("Den").innerHTML = den;
+    }
+    function OtevriOdkaz() {
+        window.open("https://seznam.cz/", "seznam", "left=10, right=10, width=300, height=300");
+    }
+    function Zavri() {
+        window.close();
+    }
+    form1.tpole1.value = "Ahoj";
+    function NaplneniPole() {
+        form2.tpole2.value = "Naplněno"
+    }
+    function Secti(a, b) {
+        vysledek = parseInt(a) + parseInt(b);
+        secti.soucet.value = vysledek;
+    }
+    function Kalkulacka(a, b, operant) {
+        a = parseInt(a);
+        b = parseInt(b);
+        if (operant == "+") {
+            vysledek = a + b;
+        }
+        else if (operant == "-") {
+            vysledek = a - b;
+        }
+        else if (operant == "/") {
+            vysledek = a / b;
+        }
+        else if (operant == "*") {
+            vysledek = a * b;
+        }
+        else {
+            vysledek = "Neznám"
+        }
+        kalkulacka.vysledek.value = vysledek;
+    }
+</script>
+
+</html>

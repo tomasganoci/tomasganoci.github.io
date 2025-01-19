@@ -39,10 +39,10 @@
     <!-- konec aside -->
 
     <!-- začátek main -->
-    <main style="border:1px solid">
+    <main>
         <!-- začátek Typografie -->
-        <section id="typography">
-            <h1>Sekce</h1>
+        <section id="typography" style="border:1px solid">
+            <h2>Sekce typography</h2>
             <article>
                 <h2>Typography</h2>
                 <section>
@@ -180,6 +180,209 @@
             </article>
         </section>
         <!-- konec Typografie -->
+        <!-- začátek Seznamy -->
+        <section id="lists">
+            <h2>Sekce seznamy</h2>
+            <article>
+                <h2>Seznamy</h2>
+                <section>
+                    <h3>Neuspořádaný</h3>
+                    <ul style="list-style-type:square;">
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Expedita sint sunt quisquam dolor facilis.</li>
+                        <li>Minima consequuntur sunt placeat tempora et?</li>
+                        <li>At, libero velit? Architecto, reiciendis repellat!</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Uspořádaný</h3>
+                    <ol style="list-style:upper-roman" reversed>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Incidunt corrupti qui autem voluptates eveniet?</li>
+                        <li>Tempora natus hic eius ab at?</li>
+                        <li>Natus obcaecati quibusdam assumenda architecto quis?</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>Seznam definic
+                        <dl>
+                            <dt>První termín</dt>
+                            <dd>Výklad první termínu</dd>
+                            <dt>Druhý termínn</dt>
+                            <dd>Výklad druhého termínu</dd>
+                        </dl>
+                    </h3>
+                </section>
+
+            </article>
+        </section>
+        <!-- konec Seznamy -->
+        <!-- začátek Tabulky -->
+        <style>
+            table,
+            td,
+            th {
+                border: 1px solid;
+            }
+        </style>
+        <section id="table">
+            <h2>Sekce tabulky</h2>
+            <article>
+                <h2>Tabulky</h2>
+                <section>
+                    <h3>Tabulka</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>bunka 1</td>
+                                <td>bunka 2</td>
+                                <td>bunka 3</td>
+                                <td>bunka 4</td>
+                                <td>bunka 5</td>
+                                <td>bunka 6</td>
+                            </tr>
+                            <tr>
+                                <td>bunka 1</td>
+                                <td>bunka 2</td>
+                                <td>bunka 3</td>
+                                <td>bunka 4</td>
+                                <td>bunka 5</td>
+                                <td>bunka 6</td>
+                            </tr>
+                            <tr>
+                                <td>bunka 1</td>
+                                <td>bunka 2</td>
+                                <td>bunka 3</td>
+                                <td>bunka 4</td>
+                                <td>bunka 5</td>
+                                <td>bunka 6</td>
+                            </tr>
+                            <tr>
+                                <td>bunka 1</td>
+                                <td>bunka 2</td>
+                                <td>bunka 3</td>
+                                <td>bunka 4</td>
+                                <td>bunka 5</td>
+                                <td>bunka 6</td>
+                            </tr>
+                            <tr>
+                                <td>bunka 1</td>
+                                <td>bunka 2</td>
+                                <td>bunka 3</td>
+                                <td>bunka 4</td>
+                                <td>bunka 5</td>
+                                <td>bunka 6</td>
+                            </tr>
+                            <tr>
+                                <td>bunka 1</td>
+                                <td>bunka 2</td>
+                                <td>bunka 3</td>
+                                <td>bunka 4</td>
+                                <td>bunka 5</td>
+                                <td>bunka 6</td>
+                            </tr>
+                            <tr>
+                                <td>bunka 1</td>
+                                <td>bunka 2</td>
+                                <td>bunka 3</td>
+                                <td>bunka 4</td>
+                                <td>bunka 5</td>
+                                <td>bunka 6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <hr>
+                <section>
+                    <h3>rowspan a colspan</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>bunka 1</th>
+                                <th>bunka 2</th>
+                                <th colspan="2">bunka 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">bunka 1</td>
+                                <td>bunka 2</td>
+                                <td>bunka 3</td>
+                                <td>bunka 4</td>
+                            </tr>
+                            <tr>
+                                <td>bunka 2</td>
+                                <td>bunka 3</td>
+                                <td>bunka 4</td>
+                            </tr>
+                            <tr>
+                                <td>bunka 1</td>
+                                <td>bunka 2</td>
+                                <td>bunka 3</td>
+                                <td>bunka 4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </section>
+        <!-- konec Tabulky -->
+        <!-- zacatek Media -->
+        <section id="media">
+            <h2>Sekce Media</h2>
+            <article>
+                <h2>Media</h2>
+                <section>
+                    <h3>SVG</h3>
+                    <svg version="1.1" width="100%" height="250" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="100%" fill="grey" />
+                        <text x="50%" y="50%" text-anchor="middle" fill="white">Responzivní SVG</text>
+                    </svg>
+                </section>
+                <section>
+                    <h3>SVG rámeček</h3>
+                    <svg version="1.1" width="200" height="200" xmlns="http://www.w3.org/2000/svg"
+                        style="border:1px solid #444">
+                        <rect x="20" y="30" width="150" height="100" fill="000" stroke="#f00" stroke-width="10px" />
+                        <circle r="50" cx="100" cy="100" fill="silver" stroke="#f00" stroke-width="10px" />
+                    </svg>
+                </section>
+            </article>
+        </section>
+        <!-- konec Media -->
+        <!-- zacatek Obrázky -->
+        <section>
+            <h2>Sekce obrázky</h2>
+            <article>
+                <h2>Obrázky</h2>
+                <section>
+                    <h3>Obrazek</h3>
+                    <figure><img src="https://picsum.photos/id/28/2400/1200" alt="Lesy a potok" width="400px"
+                            height="200px" title="Popis obrázku">
+                        <figcaption>Popis obrázku</figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h3>Picture</h3>
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="https://picsum.photos/id/216/1000/800">
+                        <source media="(min-width: 600px)" srcset="https://picsum.photos/id/217/600/400">
+                        <img src="https://picsum.photos/id/231/400/200" alt="Hory">
+                    </picture>
+                </section>
+                <section>
+                    <h3>Youtube video</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8qmfnFQfwLo?si=7J0PbdkFdFV0Im-j"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>
+            </article>
+        </section>
+        <!-- konec Obrázky -->
+         <!-- zacatek Links -->
+          
+         <!-- konec Links -->
     </main>
     <!-- konec main-->
 

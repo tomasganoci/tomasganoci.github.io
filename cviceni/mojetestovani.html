@@ -19,8 +19,7 @@
 </head>
 
 <body>
-    <div id="form">
-
+    <div id="formDiv">
         <label for="submitbutton">submitButton</label>
         <button name="submitbutton" type="submit" form="form">submitButton</button>
         <form id="form" oninput="vysledek.value=parseInt(range.value)+parseInt(number.value)">
@@ -98,14 +97,11 @@
         <input type="number" name="cislo2"><br>
         <label for="vysledek">Výsledek:</label>
         <input type="text" name="vysledek"><br>
-        <input type="button" value="+" name="plus"
-            onclick="Kalkulacka(kalkulacka.cislo1.value,kalkulacka.cislo2.value,kalkulacka.plus.defaultValue)">
-        <input type="button" value="-" name="minus"
-            onclick="Kalkulacka(kalkulacka.cislo1.value,kalkulacka.cislo2.value,kalkulacka.minus.defaultValue)">
-        <input type="button" value="*" name="krat"
-            onclick="Kalkulacka(kalkulacka.cislo1.value,kalkulacka.cislo2.value,kalkulacka.krat.defaultValue)">
+        <input type="button" value="+" name="plus" onclick="Kalkulacka(cislo1.value,cislo2.value,plus.defaultValue)">
+        <input type="button" value="-" name="minus" onclick="Kalkulacka(cislo1.value,cislo2.value,minus.defaultValue)">
+        <input type="button" value="*" name="krat" onclick="Kalkulacka(cislo1.value,cislo2.value,krat.defaultValue)">
         <input type="button" value="/" name="deleno"
-            onclick="Kalkulacka(kalkulacka.cislo1.value,kalkulacka.cislo2.value,kalkulacka.deleno.defaultValue)">
+            onclick="Kalkulacka(cislo1.value,cislo2.value,deleno.defaultValue)">
     </form>
     <hr>
     <form name="secti">
@@ -170,9 +166,9 @@
         vysledek = parseInt(a) + parseInt(b);
         secti.soucet.value = vysledek;
     }
-    function Kalkulacka(a, b, operant) {
-        a = parseInt(a);
-        b = parseInt(b);
+    function Kalkulacka(aAny, bAny, operant) {
+        let a = parseInt(aAny);
+        let b = parseInt(bAny);
         if (operant == "+") {
             vysledek = a + b;
         }

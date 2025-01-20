@@ -380,9 +380,95 @@
             </article>
         </section>
         <!-- konec Obrázky -->
-         <!-- zacatek Links -->
-          
-         <!-- konec Links -->
+        <!-- zacatek Links -->
+        <section id="links">
+            <h2>Sekce links</h2>
+            <article>
+                <h2>Odkazy a tlačítka</h2>
+                <section>
+                    <h3>Odkazy</h3>
+                    <p><a href="http://seznam.cz/" class="primary">Primární odkaz</a></p>
+                    <p><a href="#" class="secondary">Sekundární odkaz</a></p>
+                    <p><a href="#" class="contrast">Kontrastní odkaz</a></p>
+                </section>
+                <section>
+                    <h3>Tlačítka</h3>
+                    <div>
+                        <button onclick="window.location.href='https://seznam.cz';">Primarní</button>
+                        <button class="secondary">Sekundární</button>
+                        <button class="contrast">Kontrastní</button>
+                    </div>
+                    <div>
+                        <button class="outline">Primární outline</button>
+                        <button class="outline secondary">Sekundární outline</button>
+                        <button class="outline contrast">Kontrastní outline</button>
+                    </div>
+                </section>
+            </article>
+        </section>
+        <!-- konec Links -->
+        <!-- začátek Formuláře -->
+        <section class="forms">
+            <h2>Sekce formuláře</h2>
+            <article>
+                <h2>Formuláře</h2>
+                <section>
+                    <h3>Formuláře pro odběr novinek</h3>
+                    <form action="">
+                        <input type="text" name="jmeno" id="jmeno" placeholder="Křesní jméno" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <input type="checkbox" name="souhlasim" id="souhlasim" checked>
+                        <label for="souhlasim">Souhlasím</label>
+                        <input type="submit" value="Odebírat">
+                    </form>
+                </section>
+                <section>
+                    <h3>Checkboxy</h3>
+                    <fieldset>
+                        <legend>Zaškrtavací políčka</legend>
+                        <input type="checkbox" name="checkbox-1" id="checkbox-1" checked>
+                        <label for="checkbox-1">Položka 1</label>
+                        <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                        <label for="checkbox-2">Položka 2</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Přepínací tlačítka</legend>
+                        <input type="radio" name="radio" id="radio-1" value="radio-1" checked>
+                        <label for="radio-1">Souhlasím</label>
+                        <input type="radio" name="radio" id="radio-2" value="radio-2">
+                        <label for="radio-2">Nesouhlasím</label>
+                    </fieldset>
+                </section>
+                <section>
+                    <h3>Výběr</h3>
+                    <label for="mazlicci">Vyberte zvířátko:</label>
+                    <select name="mazlicci" id="mazlicci">
+                        <option value="Pes">Pes</option>
+                        <option value="Kočka">Kočka</option>
+                        <option value="Křeček" selected>Křeček</option>
+                        <option value="Papoušek">Papoušek</option>
+                        <option value="Želva">Želva</option>
+                        <option value="Rybyčky">Rybyčky</option>
+                    </select>
+                </section>
+                <section>
+                    <h3>Oblíbené jídlo</h3>
+                    <label for="food">Oblíbené jídlo</label>
+                    <select name="jidlo" id="food" size="4" multiple>
+                        <optgroup label="Omáčky">
+                            <option value="Svíčková">Svíčková</option>
+                            <option value="Koprovka">Koprovka</option>
+                            <option value="Zelí" disabled>Zelí</option>
+                        </optgroup>
+                        <optgroup label="Smažené">
+                            <option value="Řízek">Řízek</option>
+                            <option value="Smažák">Smažák</option>
+                        </optgroup>
+                    </select>
+                </section>
+            </article>
+        </section>
+        <!-- konec Formuláře -->
     </main>
     <!-- konec main-->
 

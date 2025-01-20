@@ -8,6 +8,7 @@
     <meta name="author" content="Tomáš Gánoci">
     <meta name="description" content="Přehled HTML tagu">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -45,11 +46,11 @@
             <h2>Sekce typography</h2>
             <article>
                 <h2>Typography</h2>
-                <section>
+                <section class="odstavec">
                     <h3>Odstavec</h3>
-                    <p>Příliš žluťoučký kůň úpěl ďábelské ódy</p>
+                    <p class="lines">Příliš žluťoučký kůň úpěl ďábelské ódy</p>
                 </section>
-                <section>
+                <section class="zalomeni">
                     <h3>Zalomení</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Vel deleniti quibusdam fugit eum
                         sint mollitia cum quo autem! Doloribus, animi.</p>
@@ -57,30 +58,38 @@
                 <section>
                     <h3>Nadpisy</h3>
                     <article class="reset">
-                        <h1>Nadpis 1</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Explicabo quis et minus a dolorem voluptatibus natus quibusdam
-                            ad incidunt eum!
-                        </p>
-                        <h2>Nadpis 2</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                            modi doloribus nihil ex necessitatibus sit repellendus
-                            voluptatem perspiciatis quis dignissimos?
-                        </p>
-                        <h3>Nadpis 3</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Repudiandae unde id magni, nesciunt iusto ducimus magnam sequi
-                            impedit corporis est.
-                        </p>
-                        <h4>Nadpis 4</h4>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Cupiditate accusantium odit exercitationem harum! Excepturi
-                            dolore hic deserunt laboriosam assumenda facere.
-                        </p>
+                        <div class="nadpis_h1">
+                            <h1>Nadpis 1</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Explicabo quis et minus a dolorem voluptatibus natus quibusdam
+                                ad incidunt eum!
+                            </p>
+                        </div>
+                        <div class="nadpis_h2">
+                            <h2>Nadpis 2</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                                modi doloribus nihil ex necessitatibus sit repellendus
+                                voluptatem perspiciatis quis dignissimos?
+                            </p>
+                        </div>
+                        <div class="nadpis_h3">
+                            <h3>Nadpis 3</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Repudiandae unde id magni, nesciunt iusto ducimus magnam sequi
+                                impedit corporis est.
+                            </p>
+                        </div>
+                        <div class="nadpis_h4">
+                            <h4>Nadpis 4</h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Cupiditate accusantium odit exercitationem harum! Excepturi
+                                dolore hic deserunt laboriosam assumenda facere.
+                            </p>
+                        </div>
                         <h5>Nadpis 5</h5>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
@@ -187,7 +196,7 @@
                 <h2>Seznamy</h2>
                 <section>
                     <h3>Neuspořádaný</h3>
-                    <ul style="list-style-type:square;">
+                    <ul>
                         <li>Lorem ipsum dolor sit amet consectetur.</li>
                         <li>Expedita sint sunt quisquam dolor facilis.</li>
                         <li>Minima consequuntur sunt placeat tempora et?</li>
@@ -196,7 +205,7 @@
                 </section>
                 <section>
                     <h3>Uspořádaný</h3>
-                    <ol style="list-style:upper-roman" reversed>
+                    <ol reversed>
                         <li>Lorem ipsum dolor sit amet consectetur.</li>
                         <li>Incidunt corrupti qui autem voluptates eveniet?</li>
                         <li>Tempora natus hic eius ab at?</li>
@@ -208,7 +217,7 @@
                         <dl>
                             <dt>První termín</dt>
                             <dd>Výklad první termínu</dd>
-                            <dt>Druhý termínn</dt>
+                            <dt>Druhý termín</dt>
                             <dd>Výklad druhého termínu</dd>
                         </dl>
                     </h3>

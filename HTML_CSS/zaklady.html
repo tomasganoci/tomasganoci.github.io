@@ -8,7 +8,7 @@
     <meta name="author" content="Tomáš Gánoci">
     <meta name="description" content="Přehled HTML tagu">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -417,7 +417,7 @@
         </section>
         <!-- konec Links -->
         <!-- začátek Formuláře -->
-        <section class="forms">
+        <section id="forms">
             <h2>Sekce formuláře</h2>
             <article>
                 <h2>Formuláře</h2>
@@ -475,9 +475,91 @@
                         </optgroup>
                     </select>
                 </section>
+                <section>
+                    <label for="list">Zelenina:</label>
+                    <input type="text" list="zelenina" id="list">
+                    <datalist id="zelenina">
+                        <option value="mrkev">Mrkev</option>
+                        <option value="cibule">Cibule</option>
+                        <option value="petžel">Petržel</option>
+                    </datalist>
+                </section>
+                <section>
+                    <h3>MIX prvků</h3>
+                    <label>Textové pole:
+                        <textarea name="textarea" cols="30" rows="10"
+                            placeholder="Předvyplněný text"></textarea></label>
+                    <hr>
+                    <label for="text">Text</label>
+                    <input type="text" name="text" id="text" placeholder="Text">
+                    <hr>
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass">
+                    <hr>
+                    <label for="search">Hledani</label>
+                    <input type="search" name="search" id="search" placeholder="Hledat">
+                    <hr>
+                    <input type="email" id="emailmix" placeholder="Email">
+                    <label for="emailmix">napis mi</label>
+                    <hr>
+                    <label for="date">Datum</label>
+                    <input type="date" id="date">
+                    <hr>
+                    <label for="time">Čas</label>
+                    <input type="time" id="time">
+                    <hr>
+                    <label for="color">Barva</label>
+                    <input type="color" id="color" value="#e66465">
+                    <hr>
+                    <label for="file">Soubory</label>
+                    <input type="file" id="file" multiple>
+                    <hr>
+                    <label for="range">Posuvník rozsahu</label>
+                    <input type="range" id="range" min="0" max="70" value="50">
+                    <hr>
+                </section>
+
             </article>
         </section>
         <!-- konec Formuláře -->
+        <!-- začátek Ostatní -->
+        <section id="rest">
+            <h2>Sekce ostatní</h2>
+            <article>
+                <h2>Ostatní</h2>
+                <section id="accordions">
+                    <h3>Accordions</h3>
+                    <details>
+                        <summary>A1</summary>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </details>
+                    <details open>
+                        <summary>A2</summary>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Dicta sequi quia velit et.</li>
+                            <li>Accusamus tempore obcaecati doloribus? Aliquam!</li>
+                            <li>Eos doloremque mollitia aperiam amet?</li>
+                        </ul>
+                    </details>
+                </section>
+                <section>
+                    <h3>Progress bar</h3>
+                    <label for="progress-disk">Zaplnění disku:</label>
+                    <progress id="progress-disk" value="25" max="100"></progress>
+                    <meter value="100"></meter>
+                    <label for="progress-file">Nahrávání souboru:</label>
+                    <progress id="progress-file"></progress>
+                </section>
+                <section>
+                    <h3>Veličiny</h3>
+                    <label>Znečištění odvzduší:
+                        <meter value="35" low="10" high="50" max="100"></meter>
+                    </label>
+                </section>
+            </article>
+        </section>
+        <!-- konec Ostatní -->
     </main>
     <!-- konec main-->
 

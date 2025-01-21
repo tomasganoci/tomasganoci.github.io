@@ -1,0 +1,138 @@
+:root {
+  --hlavni_barva: hsla(0, 59%, 41%, 0.4);
+  --barva_1: hsla(0, 59%, 41%, 0.6);
+  --barva_2: hsl(0, 59%, 41%);
+  --hlavni_bg_barva: hsl(120, 50%, 50%);
+  --bg_1: hsl(180, 50%, 50%);
+  --bg_2: hsl(60, 50%, 50%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+body {
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1.5rem;
+}
+p {
+  margin: 1rem;
+  padding: 0 2rem;
+}
+main {
+  width: 90%;
+  margin: auto;
+}
+ul,
+ol,
+p,
+dl {
+  display: block;
+  margin: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  padding: 0 2rem;
+}
+ol {
+  list-style: lower-greek;
+  border: 2px solid blue;
+  background-color: lightblue;
+}
+ul li {
+  background-color: #eee;
+  padding: 5px 10px;
+  list-style: circle inside;
+  border: 1px solid #ddd;
+}
+dl {
+  border-left: 7px #f00 double;
+  padding: 1em;
+}
+dt {
+  text-align: right;
+  float: left;
+  font-weight: bold;
+  color: darkred;
+}
+dt::after {
+  content: " : ";
+}
+dd {
+  padding-bottom: 0.5em;
+  margin-left: 120px;
+}
+#typography {
+  background-color: var(--bg_1);
+}
+#lists {
+  background-color: var(--hlavni_bg_barva);
+}
+#table {
+  background-image: url(https://plus.unsplash.com/premium_photo-1679814366168-f6f39e7e8ae4?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#forms {
+  background-color: var(--bg_2);
+}
+
+.odstavec {
+  background-color: teal;
+}
+.odstavec p {
+  color: greenyellow;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+.lines {
+  text-decoration: overline blue;
+}
+.lines:hover {
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+.zalomeni {
+  background-color: green;
+}
+.zalomeni p {
+  text-indent: 30px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: greenyellow;
+}
+#typography > h2 {
+  text-shadow: 5px 5px 10px black;
+}
+.nadpis_h1 {
+  text-align: center;
+}
+.nadpis_h2 {
+  text-align: right;
+}
+.reset h3 {
+  text-indent: 60px;
+}
+.nadpis_h3 {
+  text-align: justify;
+}
+.nadpis_h4 {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+}

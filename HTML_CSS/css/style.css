@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Martian+Mono:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --hlavni_barva: hsla(0, 59%, 41%, 0.4);
   --barva_1: hsla(0, 59%, 41%, 0.6);
@@ -19,7 +20,6 @@ select {
 }
 
 body {
-
 }
 h1,
 h2,
@@ -29,14 +29,94 @@ h5,
 h6 {
   margin: 1.5rem;
 }
+h1 {
+  font-family: "Montserrat", serif;
+}
+h2 {
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.justify > h3 {
+  font-family: "Martian Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.justify > p {
+  font-family: "Martian Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 p {
   margin: 1rem;
   padding: 0 2rem;
+}
+span {
+  background-color: green;
+}
+.colum {
+  columns: 150px 3;
+}
+kbd {
+  color: #fff;
+  background-color: teal;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+mark {
+  background-image: linear-gradient(to right, orange, coral, purple);
+  color: #fff;
+  background-color: teal;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+code {
+  background-color: #eee;
+  border: 1px #999;
+  line-height: 3em;
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+blockquote > p {
+  color: blue;
+  font-size: 2.5em;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+blockquote > p:after {
+  content: "";
+  border-top: 2px solid;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-right: 2px solid;
+  border-radius: 0 100px 0 0;
+  left: 40px;
+  bottom: -32px;
+  box-shadow: 10px 0 0 10px var(--bg_1); /*varianta ocásku*/
+}
+/* blockquote > p:before{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: var(--bg_1);
+  left: 46px;
+  bottom: -5px;
+} */
+blockquote > footer {
+  margin-left: 100px;
 }
 main {
   width: 90%;
   margin: auto;
 }
+
 ul,
 ol,
 p,
@@ -92,7 +172,35 @@ dd {
 #forms {
   background-color: var(--bg_2);
 }
-
+table {
+  border: 2px solid;
+  overflow: hidden;
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+table td {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid black;
+  font-weight: bold;
+}
+table th {
+  color: white;
+  background-color: orange;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 5px solid #ccc;
+}
+table tr:nth-child(even) td {
+  background-color: #eee9a2;
+}
+table tr:hover td {
+  background-color: aquamarine;
+}
 .odstavec {
   background-color: teal;
 }
@@ -120,19 +228,19 @@ dd {
 #typography > h2 {
   text-shadow: 5px 5px 10px black;
 }
-.nadpis_h1 {
+.center {
   text-align: center;
 }
-.nadpis_h2 {
+.right {
   text-align: right;
 }
-.reset h3 {
-  text-indent: 60px;
+.p-l-60 {
+  padding-left: 60px;
 }
-.nadpis_h3 {
+.justify {
   text-align: justify;
 }
-.nadpis_h4 {
+.vertical_lr {
   text-orientation: upright;
   writing-mode: vertical-lr;
 }

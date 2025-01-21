@@ -1,21 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="zaklady-style.css">
     <title>Document</title>
+    <style>
+
+        body {
+            font-size: 1.5rem;
+            min-height: 200vh;
+        }
+
+        .outer-container {
+            border: dashed black 3px;
+            width: 75vw;
+            height: 85vh;
+            margin: 40px auto;
+            position: relative;
+        }
+
+        .inner-container {
+            border: solid blue 2px;
+            height: 60vh;
+            width: 60vw;
+            margin: 100px auto;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: purple;
+            color: white;
+            padding: 1rem;
+        }
+
+        .absolute {
+            background-color: green;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .relative {
+            background-color: gold;
+            position: relative;
+            top: 500px;
+            left: 100px;
+        }
+
+        .fixed {
+            background-color: brown;
+            position: fixed;
+            top: 100px;
+            left: 80px;
+            width: 70vw;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 10px;
+            z-index: -2;
+        }
+    </style>
 </head>
+
 <body>
-             <!-- začátek container -->
-             <div class="outer-container">
-                <div class="inner-container">
-                    <div class="box absolute"><p>Absolute</p></div>
-                    <div class="box relative"><p>Relative</p></div>
-                    <div class="box fixed"><p>Fixed</p></div>
-                    <div class="box sticky"><p>Sticky</p></div>
-                </div>
-              </div>
-             <!-- konec container -->
+    <!-- začátek container -->
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="box absolute">
+                <p>Absolute</p>
+            </div>
+            <div class="box relative">
+                <p>Relative</p>
+            </div>
+            <div class="box fixed">
+                <p>Fixed</p>
+            </div>
+            <div class="box sticky">
+                <p>Sticky</p>
+            </div>
+        </div>
+    </div>
+    <!-- konec container -->
 </body>
+
 </html>

@@ -124,7 +124,7 @@
                 <section>
                     <h3>Adresa</h3>
                     <hr>
-                    <adress>Gánoci s.r.o.<br>Karla Pokorného 1353/57, Ostrava<br>Česko</adress>
+                    <address>Gánoci s.r.o.<br>Karla Pokorného 1353/57, Ostrava<br>Česko</address>
                     <hr>
                 </section>
                 <section>
@@ -141,7 +141,7 @@
                         <p><ins>Inserted</ins></p>
                         <p><s>Strikethrought</s></p>
                         <p><small>Small</small></p>
-                        <p><big>Big</big></p>
+                        <!-- <p><big>Big</big></p>  zastaralý zápis-->
                         <p>Text<sub>Sub</sub></p>
                         <p>Text<sup>Sup</sup></p>
                         <p><abbr title="Abrr">Abbr</abbr></p>
@@ -377,9 +377,7 @@
                 <section>
                     <h3>Youtube video</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/8qmfnFQfwLo?si=7J0PbdkFdFV0Im-j"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        title="YouTube video player"></iframe>
                 </section>
             </article>
         </section>
@@ -418,7 +416,7 @@
                 <h2>Formuláře</h2>
                 <section>
                     <h3>Formuláře pro odběr novinek</h3>
-                    <form>
+                    <form class="odber">
                         <input type="text" name="jmeno" id="jmeno" placeholder="Křesní jméno" required>
                         <input type="email" name="email" id="email" placeholder="Email" required>
                         <input type="checkbox" name="souhlasim" id="souhlasim" checked>
@@ -480,37 +478,39 @@
                 </section>
                 <section>
                     <h3>MIX prvků</h3>
-                    <label>Textové pole:
-                        <textarea name="textarea" cols="30" rows="10"
-                            placeholder="Předvyplněný text"></textarea></label>
-                    <hr>
-                    <label for="text">Text</label>
-                    <input type="text" name="text" id="text" placeholder="Text">
-                    <hr>
-                    <label for="pass">Password</label>
-                    <input type="password" id="pass">
-                    <hr>
-                    <label for="search">Hledani</label>
-                    <input type="search" name="search" id="search" placeholder="Hledat">
-                    <hr>
-                    <input type="email" id="emailmix" placeholder="Email">
-                    <label for="emailmix">napis mi</label>
-                    <hr>
-                    <label for="date">Datum</label>
-                    <input type="date" id="date">
-                    <hr>
-                    <label for="time">Čas</label>
-                    <input type="time" id="time">
-                    <hr>
-                    <label for="color">Barva</label>
-                    <input type="color" id="color" value="#e66465">
-                    <hr>
-                    <label for="file">Soubory</label>
-                    <input type="file" id="file" multiple>
-                    <hr>
-                    <label for="range">Posuvník rozsahu</label>
-                    <input type="range" id="range" min="0" max="70" value="50">
-                    <hr>
+                    <div class="forms">
+                        <label>Textové pole:
+                            <textarea name="textarea" cols="30" rows="10"
+                                placeholder="Předvyplněný text"></textarea></label>
+                        <hr>
+                        <label for="text">Text</label>
+                        <input type="text" name="text" id="text" placeholder="Text">
+                        <hr>
+                        <label for="pass">Password</label>
+                        <input type="password" id="pass">
+                        <hr>
+                        <label for="search">Hledani</label>
+                        <input type="search" name="search" id="search" placeholder="Hledat">
+                        <hr>
+                        <input type="email" id="emailmix" placeholder="Email">
+                        <label for="emailmix">napis mi</label>
+                        <hr>
+                        <label for="date">Datum</label>
+                        <input type="date" id="date">
+                        <hr>
+                        <label for="time">Čas</label>
+                        <input type="time" id="time">
+                        <hr>
+                        <label for="color">Barva</label>
+                        <input type="color" id="color" value="#e66465">
+                        <hr>
+                        <label for="file">Soubory</label>
+                        <input type="file" id="file" multiple>
+                        <hr>
+                        <label for="range">Posuvník rozsahu</label>
+                        <input type="range" id="range" min="0" max="70" value="50">
+                        <hr>
+                    </div>
                 </section>
 
             </article>

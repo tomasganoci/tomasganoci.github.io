@@ -318,9 +318,11 @@ table tr:hover td {
 #forms .odber input::placeholder {
   color: white;
 }
-#forms .odber input:hover {
+#forms .odber input:hover,
+#forms .odber input:focus {
   outline: blue 3px solid;
 }
+
 #forms .odber input[type="checkbox"] {
   background-color: blue;
   color: white;
@@ -328,7 +330,7 @@ table tr:hover td {
   margin-top: 15px;
 }
 #forms .odber label {
-padding-left: 8px;
+  padding-left: 8px;
 }
 #forms .odber input[type="submit"] {
   background-color: blue;
@@ -342,3 +344,92 @@ padding-left: 8px;
   margin-top: 10px;
 }
 /* Konec Formulář pro odběr novinek */
+/* Začátek Tlačítka */
+#links button {
+  background-color: #f00;
+  color: black;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 13px;
+  border: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  min-width: 8rem;
+  min-height: 2.5rem;
+}
+#links button.secondary {
+  background-color: blue;
+}
+#links button.contrast {
+  background-color: gray;
+}
+#links button.contrast:hover {
+  opacity: 1;
+  background-color: white;
+  color: black;
+}
+#links button.outline {
+  border: 3px red solid;
+  color: red;
+  background-color: transparent;
+}
+#links button.outline:hover {
+  color: black;
+  background-color: red;
+}
+#links button.outline.secondary {
+  border-color: blue;
+  color: blue;
+  transition: all 1s ease-in-out;
+}
+#links button.outline.secondary:hover {
+  background-color: blue;
+  color: white;
+}
+#links button.outline.contrast {
+  border-color: gray;
+  color: gray;
+}
+#links button.outline.contrast:hover {
+  color: white;
+  background-color: grey;
+}
+#links button:hover {
+  opacity: 0.7;
+  color: white;
+  transition-duration: 1s;
+}
+/* Konec Tlačítka */
+/* Začátek Odkazy */
+#links a {
+  color: black;
+  text-decoration: none;
+  font-size: 3rem;
+  position: relative;
+}
+#links a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  height: 5px;
+  width: 100%;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform 1s ease-in-out;
+}
+#links a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+#links a.primary:hover {
+  color: #f00;
+}
+#links a.secondary:hover {
+  color: blue;
+}
+#links a.contrast:hover {
+  color: grey;
+}
+/* Konec Odkazy */

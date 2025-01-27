@@ -5,17 +5,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/custom.css">
+    <script src="js/color-modes.js"></script>
     <title>Rozcestník</title>
 </head>
 
-<body data-bs-theme="dark">
+<body>
+    <!-- Začátek - Barevný režim -->
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                <use href="bootstrap-icons.svg#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <svg class="bi me-2" width="1em" height="1em">
+                        <use href="bootstrap-icons.svg#sun-fill"></use>
+                    </svg>
+                    Light
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="bootstrap-icons.svg#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <svg class="bi me-2" width="1em" height="1em">
+                        <use href="bootstrap-icons.svg#moon-stars-fill"></use>
+                    </svg>
+                    Dark
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="bootstrap-icons.svg#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <svg class="bi me-2" width="1em" height="1em">
+                        <use href="bootstrap-icons.svg#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="bootstrap-icons.svg#check2"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <!-- Konec - Barevný režim -->
     <header></header>
-    <main></main>
+    <main>
+        <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+            <section>
+                <h2>Výuka VŠB</h2>
+                <ul class="list-group list-unstyled">
+                    <li>
+                        <a href="VSB/bs1/" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                            aria-current="true">
+                            <svg class="bi" width="32" height="32">
+                                <use xlink:href="bootstrap-icons.svg#journal-code" />
+                            </svg>
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">bs1</h6>
+                                    <p class="mb-0 opacity-75">Výuka Bootstrap - prezenční</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="VSB/BStest" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                            aria-current="true">
+                            <svg class="bi" width="32" height="32">
+                                <use xlink:href="bootstrap-icons.svg#journal-code" />
+                            </svg>
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">BStest</h6>
+                                    <p class="mb-0 opacity-75">Výuka ze script (Youtube)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="VSB/HTML_CSS/zaklady.html"
+                            class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                            <svg class="bi" width="32" height="32">
+                                <use xlink:href="bootstrap-icons.svg#journal-code" />
+                            </svg>
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">HTML_CSS</h6>
+                                    <p class="mb-0 opacity-75">Výuka HTML/CSS - prezenční</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="VSB/mojecviceni/" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                            aria-current="true">
+                            <svg class="bi" width="32" height="32">
+                                <use xlink:href="bootstrap-icons.svg#journal-code" />
+                            </svg>
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">mojecviceni</h6>
+                                    <p class="mb-0 opacity-75">Moje cvičení, které si zkouším a procvičuji</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="VSB/zaklady/Norsko/" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                            aria-current="true">
+                            <svg class="bi" width="32" height="32">
+                                <use xlink:href="bootstrap-icons.svg#journal-code" />
+                            </svg>
+                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                <div>
+                                    <h6 class="mb-0">zaklady</h6>
+                                    <p class="mb-0 opacity-75">Základní cvičení "Lofoty"</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+    <!-- Začátek Patička -->
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
                 <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                    <svg class="bi" width="30" height="24" fill="currentColor">
+                    <svg class="bi" width="30" height="24">
                         <use xlink:href="bootstrap-icons.svg#bootstrap" />
                     </svg>
                 </a>
@@ -23,6 +153,7 @@
             </div>
         </footer>
     </div>
+    <!-- Konec Patička -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

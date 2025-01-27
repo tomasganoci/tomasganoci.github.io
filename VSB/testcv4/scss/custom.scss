@@ -1,0 +1,51 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+// $body-bg: #ff0000;
+// $body-color: #111;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+.box {
+  min-height: 50px;
+  background-color: $primary;
+}
+.background-image-custom {
+  background-image: url("../img/notebook.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.montserrat-600 {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.caprasimo-regular {
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.martian-mono-200 {
+  font-family: "Martian Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+@media (max-width: 575.98px) {
+  .h3-custom h3 {
+    font-size: small;
+  }
+}
+.carousel-item {
+  height: 32rem;
+}
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}

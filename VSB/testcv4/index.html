@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="cs" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gánoci</title>
+    <link rel="stylesheet" href="scss/custom.css">
+    <link rel="stylesheet" href="scss/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Martian+Mono:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header - Začátek -->
+    <div class="container">
+        <header class="d-flex justify-content-center py-3 bg-body fixed-top">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+        </header>
+    </div>
+    <!-- Header - Konec -->
+    <!-- Main - Začátek -->
+    <main>
+        <!-- Začátek - Sekce -->
+        <h2>Sekce 1 - Home</h2>
+        <section>
+            <!-- Začátek - Sekce 1 - Home -->
+            <article>
+                <div class="px-4 py-5 my-5 text-center container background-image-custom">
+                    <div class="container d-block mx-auto bg-secondary bg-opacity-25 rounded-5 py-5">
+                        <h2 class="display-5 fw-bold text-light">IT výstava</h2>
+                        <div class="col-lg-6 mx-auto ">
+                            <p class="lead mb-4 text-light ">Výstava se koná na adrese Vysoká škola báňská – Technická
+                                univerzita Ostrava
+                                17. listopadu 2172/15
+                                708 00 Ostrava-Poruba</p>
+                            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                <button type="button" class="btn btn-primary btn-lg px-4 gap-3" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">Rezervace vstupenek</button>
+                                <a href="https://www.vsb.cz/cs/"><button type="button"
+                                        class="btn btn-secondary btn-lg px-4">Odkaz na stránku</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Konec - Sekce 1 - Home -->
+            <!-- Začátek - Sekce 2 -->
+            <article>
+                <h2>Sekce 2 - O nás</h2>
+                <hr>
+                <div class="container bg-body-tertiary">
+                    <h2>O nás</h2>
+                    <hr>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 h3-custom">
+                        <div class="col shadow">
+                            <img src="img/onas-kody.jpg" alt="Programatorské kódování" class="img d-none d-sm-block"
+                                width="100%" height="225">
+                            <h3 class="fs-sm-5">Programování na míru</h3>
+                            <p class="montserrat-600 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Perspiciatis, dicta.</p>
+                        </div>
+                        <div class="col">
+                            <div class="col shadow">
+                                <img src="img/onas-notebook.jpg" alt="Programatorské kódování"
+                                    class="img d-none d-sm-block" width="100%" height="225">
+                                <h3>Pracujeme 24/7</h3>
+                                <p class="caprasimo-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, dicta.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col shadow">
+                                <img src="img/onas-zarovka.jpg" alt="Programatorské kódování"
+                                    class="img d-none d-sm-block" width="100%" height="225">
+                                <h3>Inovativní nápady</h3>
+                                <p class="martian-mono-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Perspiciatis, dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Konec - Sekce 2 -->
+            <!-- Začátek - Sekce 3 - Galerie Carousel -->
+            <article>
+                <h2>Sekce 3 - Galerie</h2>
+                <hr>
+                <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                            aria-label="Slide 1" aria-current="true"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                            class=""></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                            class=""></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <svg class="bd-placeholder-img" width="100%" height="100%"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-start">
+                                    <h1>První slide</h1>
+                                    <p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Veniam debitis architecto perferendis possimus cupiditate laboriosam consectetur
+                                        ipsam eum mollitia voluptatum?</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#">Zobrazit</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img" width="100%" height="100%"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h1>Druhý slide</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis
+                                        architecto perferendis possimus cupiditate laboriosam consectetur ipsam eum
+                                        mollitia voluptatum</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#">Zobrazit</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img" width="100%" height="100%"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-end">
+                                    <h1>Třetí slide</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis
+                                        architecto perferendis possimus cupiditate laboriosam consectetur ipsam eum
+                                        mollitia voluptatum</p>
+                                    <p><a class="btn btn-lg btn-primary" href="#">Zobrazit</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </article>
+            <!-- Konec - Sekce 3 - Galerie Carousel -->
+            <!-- Začátek - Sekce 4 - Ohlasy návštěvníků -->
+            <article>
+                <h2>Sekce 4 - Ohlasy návštěvníků</h2>
+                <hr>
+                <div class="album py-5 bg-body-tertiary">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="225"
+                                        fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Deleniti ipsum, atque perferendis possimus eius iusto voluptates obcaecati
+                                            laboriosam error neque? Nihil dignissimos quaerat ullam veritatis eaque
+                                            odit! Vero, maxime harum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="225"
+                                        fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Deleniti ipsum, atque perferendis possimus eius iusto voluptates obcaecati
+                                            laboriosam error neque? Nihil dignissimos quaerat ullam veritatis eaque
+                                            odit! Vero, maxime harum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="225"
+                                        fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Deleniti ipsum, atque perferendis possimus eius iusto voluptates obcaecati
+                                            laboriosam error neque? Nihil dignissimos quaerat ullam veritatis eaque
+                                            odit! Vero, maxime harum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="225"
+                                        fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Deleniti ipsum, atque perferendis possimus eius iusto voluptates obcaecati
+                                            laboriosam error neque? Nihil dignissimos quaerat ullam veritatis eaque
+                                            odit! Vero, maxime harum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="225"
+                                        fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Deleniti ipsum, atque perferendis possimus eius iusto voluptates obcaecati
+                                            laboriosam error neque? Nihil dignissimos quaerat ullam veritatis eaque
+                                            odit! Vero, maxime harum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="225"
+                                        fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Deleniti ipsum, atque perferendis possimus eius iusto voluptates obcaecati
+                                            laboriosam error neque? Nihil dignissimos quaerat ullam veritatis eaque
+                                            odit! Vero, maxime harum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="225"
+                                        fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Deleniti ipsum, atque perferendis possimus eius iusto voluptates obcaecati
+                                            laboriosam error neque? Nihil dignissimos quaerat ullam veritatis eaque
+                                            odit! Vero, maxime harum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- Konec - Ohlasy návštěvníků -->
+            <!-- Začátek - Sekce 5 - Kontaktní formulář -->
+            <article>
+                <h2>Sekce 5 - Kontaktní formulář</h2>
+                <hr>
+                <div class="container-fluid">
+                    <form action="" id="contactForm">
+                        <div class="mb-3">
+                            <label for="contactform-email" class="form-label">Emailová adresa</label>
+                            <input type="email" class="form-control" id="contactform-email"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactform-textarea" class="form-label">Dotaz</label>
+                            <textarea class="form-control" id="contactform-textarea" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit" value="Odeslat dotaz" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </article>
+            <!-- Konec - Sekce 5 - Kontaktní formulář -->
+            <!-- Začátek - Sekce 6 - Google Maps -->
+            <article>
+                <h2>Sekce 6 - Google Maps</h2>
+                <hr>
+                <div class="container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20586.367543781613!2d18.164277243364346!3d49.836896607881116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e4e2d424e2c5%3A0xfe99a98da4b6280a!2zVnlzb2vDoSDFoWtvbGEgYsOhxYhza8OhIC0gVGVjaG5pY2vDoSB1bml2ZXJ6aXRhIE9zdHJhdmE!5e0!3m2!1scs!2scz!4v1737976613156!5m2!1scs!2scz"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+            <!-- Konec - Sekce 6 - Google Maps -->
+        </section>
+    </main>
+    <!-- Main - Konec -->
+    <!-- Začátek - Sekce 7 - Kontakty -->
+    <div class="container-fluid">
+        <h2>Sekce 7 - Kontakty</h2>
+    </div>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="bootstrap-icons.svg#person-vcard-fill"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2025 <address>Tomáš Gánoci<br>
+                        tomas.ganoci@gmail.com<br>Karla Pokorného 1353/57<br>Ostrava 708 00</address></span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/tomas-ganoci/"><svg
+                            class="bi" width="24" height="24">
+                            <use xlink:href="bootstrap-icons.svg#linkedin"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="bootstrap-icons.svg#twitter"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="bootstrap-icons.svg#instagram"></use>
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="bootstrap-icons.svg#facebook"></use>
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Začátek - Sekce 7 - Kontakty -->
+    <!-- Modal - Začátek -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="staticBackdropLabel">Rezervace vstupenek </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form">
+                        <div class="mb-3">
+                            <label for="text" class="form-label">Zadejte jméno:</label>
+                            <input class="form-control" type="text" name="text" id="text"
+                                placeholder="jméno a přijmení">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input class="form-control" type="email" name="email" id="email"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel" class="form-label">Telefon:</label>
+                            <input class="form-control" type="tel" name="tel" id="tel" placeholder="+420 xxx xxx xxx">
+                        </div>
+                        <div class="mb-3">
+                            <label for="number" class="form-label">Počet vstupenek:</label>
+                            <input class="form-control" type="number" name="number" id="number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Datum:</label>
+                            <input class="form-control" type="date" name="date" id="date">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+                    <button type="submit" form="form" class="btn btn-primary">Rezervovat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Konec -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

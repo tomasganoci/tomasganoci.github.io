@@ -19,16 +19,54 @@
     <!-- Header - Začátek -->
     <div class="container">
         <header>
-            <nav >
+            <!-- <nav class="navbar navbar-expand-lg bg-body fixed-top">
+                <div class="container fluid">
+                    <ul class="nav nav-pills nav-fill fixed-top ">
+                        <li class="nav-item"><a href="#home" class="btn btn-outline-primary m-1"
+                                aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#o-nas" class="btn btn-outline-primary m-1">O nás</a></li>
+                        <li class="nav-item"><a href="#galerie" class="btn btn-outline-primary m-1">Galerie</a></li>
+                        <li class="nav-item"><a href="#ohlasy-navstevniku" class="btn btn-outline-primary m-1">Ohlasy
+                                Návštevníků</a></li>
+                        <li class="nav-item"><a href="#kontakni-formular" class="btn btn-outline-primary m-1">Kontaktní
+                                formulář</a></li>
+                        <li class="nav-item"><a href="#google-maps" class="btn btn-outline-primary m-1">Google Maps</a></li>
+                        <li class="nav-item"><a href="#kontaky" class="btn btn-outline-primary m-1">Kontakt</a></li>
+                    </ul>
+            </div>
+            </nav> -->
+            <!-- <nav>
                 <ul class="nav nav-pills nav-fill fixed-top bg-body">
-                    <li class="nav-item"><a href="#home" class="btn btn-outline-primary m-1" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#home" class="btn btn-outline-primary m-1"
+                            aria-current="page">Home</a></li>
                     <li class="nav-item"><a href="#o-nas" class="btn btn-outline-primary m-1">O nás</a></li>
                     <li class="nav-item"><a href="#galerie" class="btn btn-outline-primary m-1">Galerie</a></li>
-                    <li class="nav-item"><a href="#ohlasy-navstevniku" class="btn btn-outline-primary m-1">Ohlasy Návštevníků</a></li>
-                    <li class="nav-item"><a href="#kontakni-formular" class="btn btn-outline-primary m-1">Kontaktní formulář</a></li>
+                    <li class="nav-item"><a href="#ohlasy-navstevniku" class="btn btn-outline-primary m-1">Ohlasy
+                            Návštevníků</a></li>
+                    <li class="nav-item"><a href="#kontakni-formular" class="btn btn-outline-primary m-1">Kontaktní
+                            formulář</a></li>
                     <li class="nav-item"><a href="#google-maps" class="btn btn-outline-primary m-1">Google Maps</a></li>
                     <li class="nav-item"><a href="#kontaky" class="btn btn-outline-primary m-1">Kontakt</a></li>
                 </ul>
+            </nav> -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav mt-2">
+                            <a class="btn btn-outline-primary m-1" href="#home">Home</a>
+                            <a class="btn btn-outline-primary m-1" href="#o-nas">O nás</a>
+                            <a class="btn btn-outline-primary m-1" href="#ohlasy-navstevniku">Ohlasy návštevníků</a>
+                            <a class="btn btn-outline-primary m-1" href="#kontakni-formular">Kontaktní formulář</a>
+                            <a class="btn btn-outline-primary m-1" href="#google-maps">Google Maps</a>
+                            <a class="btn btn-outline-primary m-1" href="#kontaky">Kontakt</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>
     </div>
@@ -37,7 +75,7 @@
     <main>
         <!-- Začátek - Sekce -->
         <section>
-            <h2>Sekce 1 - Home</h2>
+            <h2 class="d-none">Sekce 1 - Home</h2>
             <!-- Začátek - Sekce 1 - Home -->
             <article id="home">
                 <div class="px-4 py-5 my-5 text-center container background-image-custom">
@@ -61,7 +99,7 @@
             <!-- Konec - Sekce 1 - Home -->
             <!-- Začátek - Sekce 2 -->
             <article id="o-nas">
-                <h2>Sekce 2 - O nás</h2>
+                <h2 class="d-none">Sekce 2 - O nás</h2>
                 <hr>
                 <div class="container bg-body-tertiary">
                     <h2>O nás</h2>
@@ -98,83 +136,76 @@
             <!-- Konec - Sekce 2 -->
             <!-- Začátek - Sekce 3 - Galerie Carousel -->
             <article id="galerie">
-                <h2>Sekce 3 - Galerie</h2>
+                <h2 class="d-none">Sekce 3 - Galerie</h2>
                 <hr>
-                <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                            aria-label="Slide 1" aria-current="true"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                            class=""></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                            class=""></button>
+                <div class="container">
+                    <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                                aria-label="Slide 1" aria-current="true"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                                class=""></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                                class=""></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/galerie-u-stolu.jpg" alt="U stolu"
+                                    class="d-block w-100 bd-placeholder-img">
+                                <div class="container">
+                                    <div class="carousel-caption text-start">
+                                        <h3 class="text-light">První slide</h3>
+                                        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Veniam debitis architecto perferendis possimus cupiditate laboriosam
+                                            consectetur
+                                            ipsam eum mollitia voluptatum?</p>
+                                        <p><a class="btn btn-lg btn-primary" href="#">Zobrazit</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/galerie-oblek.jpg" alt="oblek" class="d-block w-100 bd-placeholder-img">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h3 class="text-light">Druhý slide</h3>
+                                        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Veniam debitis
+                                            architecto perferendis possimus cupiditate laboriosam consectetur ipsam eum
+                                            mollitia voluptatum</p>
+                                        <p><a class="btn btn-lg btn-primary" href="#">Zobrazit</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/galerie-prace.jpg" alt="práce" class="d-block w-100 bd-placeholder-img">
+                                <div class="container">
+                                    <div class="carousel-caption text-end">
+                                        <h3>Třetí slide</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis
+                                            architecto perferendis possimus cupiditate laboriosam consectetur ipsam eum
+                                            mollitia voluptatum</p>
+                                        <p><a class="btn btn-lg btn-primary" href="#">Zobrazit</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <svg class="bd-placeholder-img" width="100%" height="100%"
-                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                            </svg>
-                            <div class="container">
-                                <div class="carousel-caption text-start">
-                                    <h3>První slide</h3>
-                                    <p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Veniam debitis architecto perferendis possimus cupiditate laboriosam consectetur
-                                        ipsam eum mollitia voluptatum?</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#">Zobrazit</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <svg class="bd-placeholder-img" width="100%" height="100%"
-                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                            </svg>
-                            <div class="container">
-                                <div class="carousel-caption">
-                                    <h3>Druhý slide</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis
-                                        architecto perferendis possimus cupiditate laboriosam consectetur ipsam eum
-                                        mollitia voluptatum</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#">Zobrazit</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <svg class="bd-placeholder-img" width="100%" height="100%"
-                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                            </svg>
-                            <div class="container">
-                                <div class="carousel-caption text-end">
-                                    <h3>Třetí slide</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis
-                                        architecto perferendis possimus cupiditate laboriosam consectetur ipsam eum
-                                        mollitia voluptatum</p>
-                                    <p><a class="btn btn-lg btn-primary" href="#">Zobrazit</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </article>
             <!-- Konec - Sekce 3 - Galerie Carousel -->
             <!-- Začátek - Sekce 4 - Ohlasy návštěvníků -->
             <article id="ohlasy-navstevniku">
-                <h2>Sekce 4 - Ohlasy návštěvníků</h2>
+                <h2 class="d-none">Sekce 4 - Ohlasy návštěvníků</h2>
                 <hr>
                 <div class="album py-5 bg-body-tertiary">
                     <div class="container">
@@ -313,7 +344,7 @@
             <!-- Konec - Ohlasy návštěvníků -->
             <!-- Začátek - Sekce 5 - Kontaktní formulář -->
             <article id="kontakni-formular">
-                <h2>Sekce 5 - Kontaktní formulář</h2>
+                <h2 class="d-none">Sekce 5 - Kontaktní formulář</h2>
                 <hr>
                 <div class="container-fluid">
                     <form id="contactForm">
@@ -335,7 +366,7 @@
             <!-- Konec - Sekce 5 - Kontaktní formulář -->
             <!-- Začátek - Sekce 6 - Google Maps -->
             <article id="google-maps">
-                <h2>Sekce 6 - Google Maps</h2>
+                <h2 class="d-none">Sekce 6 - Google Maps</h2>
                 <hr>
                 <div class="container">
                     <iframe
@@ -350,7 +381,7 @@
     <!-- Main - Konec -->
     <!-- Začátek - Sekce 7 - Kontakty -->
     <div id="kontaky" class="container-fluid">
-        <h2>Sekce 7 - Kontakty</h2>
+        <h2 class="d-none">Sekce 7 - Kontakty</h2>
     </div>
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

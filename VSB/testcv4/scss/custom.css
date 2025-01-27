@@ -12004,7 +12004,7 @@ textarea.form-control-lg {
   }
 }
 .carousel-item {
-  height: 32rem;
+  max-height: 32rem;
 }
 
 .bi {

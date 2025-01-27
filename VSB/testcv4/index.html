@@ -14,17 +14,21 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
     <!-- Header - Začátek -->
     <div class="container">
         <header class="d-flex justify-content-center py-3 bg-body fixed-top">
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            </ul>
+            <nav>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#o-nas" class="nav-link">O nás</a></li>
+                    <li class="nav-item"><a href="#galerie" class="nav-link">Galerie</a></li>
+                    <li class="nav-item"><a href="#ohlasy-navstevniku" class="nav-link">Ohlasy Návštevníků</a></li>
+                    <li class="nav-item"><a href="#kontakni-formular" class="nav-link">Kontaktní formulář</a></li>
+                    <li class="nav-item"><a href="#google-maps" class="nav-link">Google Maps</a></li>
+                    <li class="nav-item"><a href="#kontaky" class="nav-link">Kontakt</a></li>
+                </ul>
+            </nav>
         </header>
     </div>
     <!-- Header - Konec -->
@@ -34,7 +38,7 @@
         <h2>Sekce 1 - Home</h2>
         <section>
             <!-- Začátek - Sekce 1 - Home -->
-            <article>
+            <article id="home">
                 <div class="px-4 py-5 my-5 text-center container background-image-custom">
                     <div class="container d-block mx-auto bg-secondary bg-opacity-25 rounded-5 py-5">
                         <h2 class="display-5 fw-bold text-light">IT výstava</h2>
@@ -46,8 +50,8 @@
                             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                                 <button type="button" class="btn btn-primary btn-lg px-4 gap-3" data-bs-toggle="modal"
                                     data-bs-target="#staticBackdrop">Rezervace vstupenek</button>
-                                <a href="https://www.vsb.cz/cs/"><button type="button"
-                                        class="btn btn-secondary btn-lg px-4">Odkaz na stránku</button></a>
+                                <button type="button" onclick="document.location='https://www.vsb.cz/cs/'"
+                                    class="btn btn-secondary btn-lg px-4">Odkaz na stránku</button>
                             </div>
                         </div>
                     </div>
@@ -55,7 +59,7 @@
             </article>
             <!-- Konec - Sekce 1 - Home -->
             <!-- Začátek - Sekce 2 -->
-            <article>
+            <article id="o-nas">
                 <h2>Sekce 2 - O nás</h2>
                 <hr>
                 <div class="container bg-body-tertiary">
@@ -64,7 +68,7 @@
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 h3-custom">
                         <div class="col shadow">
                             <img src="img/onas-kody.jpg" alt="Programatorské kódování" class="img d-none d-sm-block"
-                                width="100%" height="225">
+                                height="225">
                             <h3 class="fs-sm-5">Programování na míru</h3>
                             <p class="montserrat-600 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Perspiciatis, dicta.</p>
@@ -72,7 +76,7 @@
                         <div class="col">
                             <div class="col shadow">
                                 <img src="img/onas-notebook.jpg" alt="Programatorské kódování"
-                                    class="img d-none d-sm-block" width="100%" height="225">
+                                    class="img d-none d-sm-block" height="225">
                                 <h3>Pracujeme 24/7</h3>
                                 <p class="caprasimo-regular">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Perspiciatis, dicta.</p>
@@ -81,7 +85,7 @@
                         <div class="col">
                             <div class="col shadow">
                                 <img src="img/onas-zarovka.jpg" alt="Programatorské kódování"
-                                    class="img d-none d-sm-block" width="100%" height="225">
+                                    class="img d-none d-sm-block" height="225">
                                 <h3>Inovativní nápady</h3>
                                 <p class="martian-mono-200">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Perspiciatis, dicta.</p>
@@ -92,7 +96,7 @@
             </article>
             <!-- Konec - Sekce 2 -->
             <!-- Začátek - Sekce 3 - Galerie Carousel -->
-            <article>
+            <article id="galerie">
                 <h2>Sekce 3 - Galerie</h2>
                 <hr>
                 <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
@@ -113,7 +117,7 @@
                             </svg>
                             <div class="container">
                                 <div class="carousel-caption text-start">
-                                    <h1>První slide</h1>
+                                    <h2>První slide</h2>
                                     <p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Veniam debitis architecto perferendis possimus cupiditate laboriosam consectetur
                                         ipsam eum mollitia voluptatum?</p>
@@ -129,7 +133,7 @@
                             </svg>
                             <div class="container">
                                 <div class="carousel-caption">
-                                    <h1>Druhý slide</h1>
+                                    <h2>Druhý slide</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis
                                         architecto perferendis possimus cupiditate laboriosam consectetur ipsam eum
                                         mollitia voluptatum</p>
@@ -145,7 +149,7 @@
                             </svg>
                             <div class="container">
                                 <div class="carousel-caption text-end">
-                                    <h1>Třetí slide</h1>
+                                    <h2>Třetí slide</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis
                                         architecto perferendis possimus cupiditate laboriosam consectetur ipsam eum
                                         mollitia voluptatum</p>
@@ -168,7 +172,7 @@
             </article>
             <!-- Konec - Sekce 3 - Galerie Carousel -->
             <!-- Začátek - Sekce 4 - Ohlasy návštěvníků -->
-            <article>
+            <article id="ohlasy-navstevniku">
                 <h2>Sekce 4 - Ohlasy návštěvníků</h2>
                 <hr>
                 <div class="album py-5 bg-body-tertiary">
@@ -300,11 +304,11 @@
             </article>
             <!-- Konec - Ohlasy návštěvníků -->
             <!-- Začátek - Sekce 5 - Kontaktní formulář -->
-            <article>
+            <article id="kontakni-formular">
                 <h2>Sekce 5 - Kontaktní formulář</h2>
                 <hr>
                 <div class="container-fluid">
-                    <form action="" id="contactForm">
+                    <form id="contactForm">
                         <div class="mb-3">
                             <label for="contactform-email" class="form-label">Emailová adresa</label>
                             <input type="email" class="form-control" id="contactform-email"
@@ -322,14 +326,14 @@
             </article>
             <!-- Konec - Sekce 5 - Kontaktní formulář -->
             <!-- Začátek - Sekce 6 - Google Maps -->
-            <article>
+            <article id="google-maps">
                 <h2>Sekce 6 - Google Maps</h2>
                 <hr>
                 <div class="container">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20586.367543781613!2d18.164277243364346!3d49.836896607881116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e4e2d424e2c5%3A0xfe99a98da4b6280a!2zVnlzb2vDoSDFoWtvbGEgYsOhxYhza8OhIC0gVGVjaG5pY2vDoSB1bml2ZXJ6aXRhIE9zdHJhdmE!5e0!3m2!1scs!2scz!4v1737976613156!5m2!1scs!2scz"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
                 </div>
             </article>
             <!-- Konec - Sekce 6 - Google Maps -->
@@ -337,7 +341,7 @@
     </main>
     <!-- Main - Konec -->
     <!-- Začátek - Sekce 7 - Kontakty -->
-    <div class="container-fluid">
+    <div id="kontaky" class="container-fluid">
         <h2>Sekce 7 - Kontakty</h2>
     </div>
     <div class="container">

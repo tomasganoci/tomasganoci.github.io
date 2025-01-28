@@ -9,10 +9,6 @@
 
 // Then add additional custom code here
 
-.box {
-  min-height: 50px;
-  background-color: $primary;
-}
 .background-image-custom {
   background-image: url("../img/notebook.jpg");
   background-position: center;
@@ -51,6 +47,14 @@
 }
 #o-nas img {
   width: 100%;
+}
+#o-nas .col > div > div {
+  overflow: hidden;
+}
+@include media-breakpoint-up(sm) {
+  #o-nas .col > div > div {
+    height: 200px;
+  }
 }
 #ohlasy-navstevniku h3 {
   text-align: center;

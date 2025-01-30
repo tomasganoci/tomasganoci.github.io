@@ -4,6 +4,8 @@
 // Include any default variable overrides here (though functions won't be available)
 // $body-bg: #ff0000;
 // $body-color: #111;
+$navbar-light-active-color: var(--bs-white);
+$navbar-light-hover-color: var(--bs-white);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 

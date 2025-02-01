@@ -15,7 +15,7 @@
     <script src="js/color-modes.js"></script>
 </head>
 
-<body id="body" data-bs-spy="scroll" data-bs-target="#navbar">
+<body id="body" data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- Začátek - Barevný režim -->
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle z-2">
         <button class="btn btn-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
@@ -67,45 +67,42 @@
     <!-- Konec - Barevný režim -->
     <h1 class="d-none">Gánoci - Zkouška Bootstrap</h1>
     <!-- Header - Začátek -->
-    <div class="container">
-        <header>
-            <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top border-bottom border-primary">
-                <div class="container-fluid row-gap-2 flex-row-reverse">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-                        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbar">
-                        <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
-                            <li class="nav-item text-nowrap"><a
-                                    class="btn btn-primary border border-1 border-primary nav-link"
-                                    href="#home">Home</a></li>
-                            <li class="nav-item text-nowrap"><a
-                                    class="btn btn-primary border border-1 border-primary nav-link" href="#o-nas">O
-                                    nás</a></li>
-                            <li class="nav-item text-nowrap"><a
-                                    class="btn btn-primary border border-1 border-primary nav-link"
-                                    href="#ohlasy-navstevniku">Ohlasy návštevníků</a></li>
-                            <li class="nav-item text-nowrap"><a
-                                    class="btn btn-primary border border-1 border-primary nav-link"
-                                    href="#kontakni-formular">Kontaktní formulář</a></li>
-                            <li class="nav-item text-nowrap"><a
-                                    class="btn btn-primary border border-1 border-primary nav-link"
-                                    href="#google-maps">Google Maps</a></li>
-                            <li class="nav-item text-nowrap"><a
-                                    class="btn btn-primary border border-1 border-primary nav-link"
-                                    href="#kontaky">Kontakt</a></li>
-                        </ul>
-                    </div>
-                    <h2>Tomáš Gánoci</h2>
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top border-bottom border-primary">
+            <div class="container-fluid row-gap-2 flex-row-reverse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbar">
+                    <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item text-nowrap"><a
+                                class="btn btn-primary border border-1 border-primary nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item text-nowrap"><a
+                                class="btn btn-primary border border-1 border-primary nav-link" href="#o-nas">O
+                                nás</a></li>
+                        <li class="nav-item text-nowrap"><a
+                                class="btn btn-primary border border-1 border-primary nav-link"
+                                href="#ohlasy-navstevniku">Ohlasy návštevníků</a></li>
+                        <li class="nav-item text-nowrap"><a
+                                class="btn btn-primary border border-1 border-primary nav-link"
+                                href="#kontakni-formular">Kontaktní formulář</a></li>
+                        <li class="nav-item text-nowrap"><a
+                                class="btn btn-primary border border-1 border-primary nav-link"
+                                href="#google-maps">Google Maps</a></li>
+                        <li class="nav-item text-nowrap"><a
+                                class="btn btn-primary border border-1 border-primary nav-link"
+                                href="#kontaky">Kontakt</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-    </div>
+                <h2>Tomáš Gánoci</h2>
+            </div>
+        </nav>
+    </header>
     <!-- Header - Konec -->
     <!-- Main - Začátek -->
-    <main>
-        <div class="py-5"> </div> <!-- Kompenzace fixed hlavičky -->
+    <main style="padding-top: 60px;">
         <!-- Začátek - Sekce -->
         <section>
             <h2 class="d-none">Sekce 1 - Home</h2>
@@ -465,6 +462,7 @@
                 <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
                             <use xlink:href="bootstrap-icons.svg#facebook"></use>
                         </svg></a></li>
+                        
             </ul>
         </footer>
     </div>
@@ -512,7 +510,22 @@
         </div>
     </div>
     <!-- Modal - Konec -->
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Automatické zavření menu po kliknutí -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let navLinks = document.querySelectorAll(".nav-link");
+            let navBarCollapse = document.querySelector(".navbar-collapse");
+
+            navLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    if (navBarCollapse.classList.contains("show")) {
+                        new bootstrap.Collapse(navBarCollapse, { toggle: true });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomáš Gánoci - Portfolio</title>
+    <meta name="author" content="Tomáš Gánoci">
+    <meta name="description"
+        content="Jsem junior webový vývojář se zaměřením na HTML, CSS, Bootstrap, JavaScript a PHP. Podívejte se na mé projekty a kontaktujte mě.">
+    <meta name="keywords" content="webový vývojář, programátor, portfolio, HTML, CSS, JavaScript, Bootstrap, PHP">
+    <!-- Klíčová slova, kvůli starým vyhledávačům -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- script barevného režimu -->
+    <script src="js/color-modes.js"></script>
+    <!-- /script barevného režimu -->
+</head>
+
+<body id="body" data-bs-spy="scroll" data-bs-target=".navbar"> <!-- BS5 ScrollSpy -->
+    <!-- barevný režim -->
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle z-2">
+        <button class="btn btn-secondary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Zvolit barevný režim (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                <use href="bootstrap-icons.svg#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">Zvolit barevný režim</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <svg class="bi me-2" width="1em" height="1em">
+                        <use href="bootstrap-icons.svg#sun-fill"></use>
+                    </svg>
+                    Světlý
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="bootstrap-icons.svg#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <svg class="bi me-2" width="1em" height="1em">
+                        <use href="bootstrap-icons.svg#moon-stars-fill"></use>
+                    </svg>
+                    Tmavý
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="bootstrap-icons.svg#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <svg class="bi me-2" width="1em" height="1em">
+                        <use href="bootstrap-icons.svg#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="bootstrap-icons.svg#check2"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <!-- /barevný režim -->
+    <!-- header - fixed -->
+    <header>
+        <h1 class="d-none">Tomáš Gánoci - Portfolio</h1>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top border-bottom border-primary"> <!-- fixed -->
+            <div class="container-fluid row-gap-2 flex-row-reverse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Hamburger navigace">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbar">
+                    <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item text-nowrap"><a
+                                class="btn btn-primary border border-1 border-primary nav-link" href="#o-mne">O
+                                mně</a></li>
+                        <li class="nav-item text-nowrap"><a
+                                class="btn btn-primary border border-1 border-primary nav-link"
+                                href="#dovednosti">Dovednosti</a></li>
+                        <li class="nav-item text-nowrap"><a
+                                class="btn btn-primary border border-1 border-primary nav-link"
+                                href="#projekty">Projekty</a></li>
+                        <li class="nav-item text-nowrap"><a
+                                class="btn btn-primary border border-1 border-primary nav-link"
+                                href="#konicky">Koníčky</a></li>
+                        <li class="nav-item text-nowrap"><a
+                                class="btn btn-primary border border-1 border-primary nav-link"
+                                href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- /header - fixed -->
+    <!-- main -->
+    <main>
+        <div class="container">
+            <section>
+                <h2 class="d-none">Sekce portfolia</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="container">
+
+                                <!-- o mne -->
+                                <article id="o-mne">
+                                    <h2>O mně</h2>
+                                    <div class="col bg-body-tertiary">
+                                        <div>
+                                            <img src="img/profilovka.jpg" alt="profilová fotka"
+                                                class="rounded-circle bd-placeholder-img card-img-top border-4"
+                                                width="100%" role="img" aria-label="Placeholder: Thumbnail"
+                                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                            <h3>Tomáš Gánoci, Ostrava</h3>
+                                            <i>Innovation or die</i>
+                                            <p>Full-stack developer</p>
+                                            <div class="card-body">
+                                                <p class="card-text">Jsem junior webový vývojář se zaměřením na HTML,
+                                                    CSS,
+                                                    Bootstrap, JavaScript a PHP</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- /o mne -->
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <!-- dovednosti -->
+                            <div class="container">
+                                <article id="dovednosti">
+                                    <h2>Dovednosti</h2>
+                                    <div class="col bg-">
+                                        <div class="card shadow-sm">
+                                            <img src="img/profilovka.jpg" alt="profilová fotka"
+                                                class="rounded-circle bd-placeholder-img card-img-top border-4"
+                                                width="100%" role="img" aria-label="Placeholder: Thumbnail"
+                                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                            <h3>Tomáš Gánoci, Ostrava</h3>
+                                            <i>Innovation or die</i>
+                                            <p>Full-stack developer</p>
+                                            <div class="card-body">
+                                                <p class="card-text">Jsem junior webový vývojář se zaměřením na HTML,
+                                                    CSS,
+                                                    Bootstrap, JavaScript a PHP</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- /dovednosti -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- projekty -->
+                <div class="container">
+                    <article id="projekty">
+                        <h2>Projekty</h2>
+                    </article>
+                </div>
+                <!-- /projekty -->
+                <!-- konicky -->
+                <div class="container">
+                    <article id="konicky">
+                        <h2>Koníčky</h2>
+                    </article>
+                </div>
+                <!-- /konicky -->
+                <!-- kontakt -->
+                <div class="container">
+                    <article id="kontakt">
+                        <h2>Kontakt</h2>
+                    </article>
+                </div>
+                <!-- /kontakt -->
+            </section>
+        </div>
+    </main>
+    <!-- /main -->
+    <!-- footer -->
+    <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <!-- copyright -->
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 me-2 mb-md-0 text-body-secondary">© 2025 Tomáš Gánoci </span>
+
+        </div>
+        <!-- /copyright -->
+        <!-- napsáno pomoci -->
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="32" height="32">
+                    <use xlink:href="bootstrap-icons.svg#filetype-html"></use>
+                </svg>
+            </a>
+            <i class="bi bi-filetype-css"></i>
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="32" height="32">
+                    <use xlink:href="bootstrap-icons.svg#filetype-css"></use>
+                </svg>
+            </a>
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="32" height="32">
+                    <use xlink:href="bootstrap-icons.svg#bootstrap"></use>
+                </svg>
+            </a>
+        </div>
+        <!-- /napsáno pomoci -->
+        <!-- sociální sítě -->
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="mb-3 me-2 mb-md-0"><a class="text-body-secondary" href="https://github.com/tomasganoci"
+                    target="_blank"><svg class="bi" width="32" height="32">
+                        <use xlink:href="bootstrap-icons.svg#github"></use>
+                    </svg></a></li>
+            <li class="mb-3 me-2 mb-md-0"><a class="text-body-secondary"
+                    href="https://www.linkedin.com/in/tomas-ganoci/" target="_blank"><svg class="bi" width="32"
+                        height="32">
+                        <use xlink:href="bootstrap-icons.svg#linkedin"></use>
+                    </svg></a></li>
+            <li class="mb-3 me-2 mb-md-0"><a class="text-body-secondary" href="https://www.instagram.com/tomas.ganoci/"
+                    target="_blank"><svg class="bi" width="32" height="32">
+                        <use xlink:href="bootstrap-icons.svg#instagram"></use>
+                    </svg></a></li>
+            <li class="mb-3 me-2 mb-md-0"><a class="text-body-secondary" href="https://www.facebook.com/tomas.ganoci"
+                    target="_blank"><svg class="bi" width="32" height="32">
+                        <use xlink:href="bootstrap-icons.svg#facebook"></use>
+                    </svg></a></li>
+        </ul>
+        <!-- sociální sítě -->
+    </footer>
+    <!-- footer -->
+    <!-- skripty -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/javascript.js"></script>
+    <!-- /skripty -->
+</body>
+
+</html>

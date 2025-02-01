@@ -16,3 +16,14 @@ $navbar-light-hover-color: var(--bs-white);
 main > .container {
   padding-top: 65px;
 }
+//zmenšení obrázků v "o mně"
+#o-mne {
+  img {
+    width: 50%;
+  }
+  @include media-breakpoint-up(md) {
+    img {
+      min-width: 150px;
+    }
+  }
+}

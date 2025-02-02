@@ -33,7 +33,7 @@ main > .container {
   }
 }
 #projekty {
-  img {
+  .col > div > img {
     height: 250px;
   }
   .card {

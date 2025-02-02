@@ -11989,7 +11989,7 @@ main > .container {
   }
 }
 
-#projekty img {
+#projekty .col > div > img {
   height: 250px;
 }
 #projekty .card {

@@ -11981,4 +11981,8 @@ main > .container {
   #o-mne img {
     min-width: 150px;
   }
+}
+
+#projekty img {
+  height: 250px;
 }/*# sourceMappingURL=style.css.map */

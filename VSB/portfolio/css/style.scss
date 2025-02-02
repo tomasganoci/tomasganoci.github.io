@@ -16,10 +16,15 @@ $navbar-light-hover-color: var(--bs-white);
 main > .container {
   padding-top: 65px;
 }
+:target {
+  scroll-margin-top: 65px;
+}
 //zmenšení obrázků v "o mně"
 #o-mne {
   img {
-    width: 50%;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
   }
   @include media-breakpoint-up(md) {
     img {
@@ -30,5 +35,16 @@ main > .container {
 #projekty {
   img {
     height: 250px;
+  }
+  .card {
+    height: 450px;
+  }
+}
+#konicky {
+  iframe,
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
   }
 }

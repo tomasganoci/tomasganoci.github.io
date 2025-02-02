@@ -11974,8 +11974,14 @@ main > .container {
   padding-top: 65px;
 }
 
+:target {
+  scroll-margin-top: 65px;
+}
+
 #o-mne img {
-  width: 50%;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
 }
 @media (min-width: 768px) {
   #o-mne img {
@@ -11985,4 +11991,14 @@ main > .container {
 
 #projekty img {
   height: 250px;
+}
+#projekty .card {
+  height: 450px;
+}
+
+#konicky iframe,
+#konicky img {
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
 }/*# sourceMappingURL=style.css.map */

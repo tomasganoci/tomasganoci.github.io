@@ -18,14 +18,14 @@
     </style>
 </head>
 
-<body>
+<body style="width: 768px; margin:0 auto">
     <div id="formDiv">
         <label for="submitbutton">submitButton</label>
         <button name="submitbutton" type="submit" form="form">submitButton</button>
         <form id="form" oninput="vysledek.value=parseInt(range.value)+parseInt(number.value)">
             <label for="text">Text:</label>
             <input type="text" id="text" name="text"><br>
-            <fieldset>
+            <fieldset name="radioField">
                 <legend>Radio</legend>
                 <label for="radio1">Radio 1:</label>
                 <input type="radio" id="radio1" name="radio" value="radio1"><br>
@@ -33,9 +33,10 @@
                 <input type="radio" id="radio2" name="radio" value="radio2"><br>
                 <label for="radio3">Radio 3:</label>
                 <input type="radio" id="radio3" name="radio" value="radio3"><br>
+                <input type="button" onclick="RadioButton()" value="Zobraz">
             </fieldset>
             <label for="checkbox">Checkbox:</label>
-            <input type="checkbox" id="checkbox" name="checkbox"><br>
+            <input type="checkbox" id="checkbox" name="checkbox" onclick="Zobraz()"><br>
             <label for="file">File:</label>
             <input type="file" name="file" id="file">
             <fieldset>
@@ -53,7 +54,7 @@
                 <label for="image">Image</label>
                 <input id="image" name="image" type="image" src="../1.jpg" alt="image" height="300"><br>
             </fieldset><br>
-            <input type="color" name="color" id="color"><br>
+            <input type="color" name="color" id="color" onclick="ZobrazBarvu()"><br>
             <input type="date" name="date" id="date" max="2025-01-15"><br>
             <input type="datetime-local" name="datetime" id="datetime"><br>
             <input type="search" name="search" id="search"><br>
@@ -90,6 +91,7 @@
         </form>
     </div>
     <hr>
+    <h2>4 operace / Kalkulačka</h2>
     <form name="kalkulacka">
         <label for="cislo1">Číslo 1:</label>
         <input type="number" name="cislo1"><br>
@@ -125,6 +127,13 @@
     <button onclick="Zavri()">Zavří</button>
     <hr>
     <button onclick="OtevriOdkaz()">Otevří odkaz</button>
+    <hr>
+    <div style="position: fixed; top:20px; right:50px; background-color:yellow;">
+        <h2>Výsledek</h2>
+        <form name="vysledek">
+            <input type="text" name="vysledel" id="vysledek">
+        </form>
+    </div>
     <hr>
     <table id="Den">
     </table>
@@ -185,6 +194,20 @@
             vysledek = "Neznám"
         }
         kalkulacka.vysledek.value = vysledek;
+    }
+    function Zobraz() {
+        vysledek.vysledek.value = form.checkbox.checked
+    }
+    function ZobrazBarvu() {
+        vysledek.vysledek.value = form.color.value
+    }
+    function RadioButton() {
+        for (let index = 0; index < form.radio.length; index++) {
+            if (form.radio[index].checked == true){
+                vysledek.vysledek.value = form.radio[index].defaultValue
+                break;
+            }
+        }
     }
 </script>
 

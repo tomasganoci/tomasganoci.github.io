@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>let date = new Date(); // Vytvoří proměnnou, ve které je aktuální datum a čas
+        document.write("Dnes je: " + date.getDate() + ". " + (date.getMonth() + 1) + ". " + date.getFullYear());
+        document.write("<br>");
+        document.write("Čas je: " + date.getHours() + ":" + date.getMinutes());
+        let aktualniCas = new Date();
+        let aktualniHodina = aktualniCas.getHours();
+        document.write("<br>")
+        if ((aktualniHodina >= 5) && (aktualniHodina <= 9)) {
+            document.write("Dobré ráno");
+        } else if ((aktualniHodina >= 10) && (aktualniHodina <= 11)) {
+            document.write("Dobré dopoledne");
+        } else if (aktualniHodina == 12) {
+            document.write("Dobré poledne");
+        } else if ((aktualniHodina >= 13) && (aktualniHodina <= 17)) {
+            document.write("Dobré odpoledne");
+        } else if ((aktualniHodina >= 18) && (aktualniHodina <= 21)) {
+            document.write("Dobrý večer");
+        } else {
+            document.write("Dobrou noc");
+        }
+    </script>
+</body>
+
+</html>

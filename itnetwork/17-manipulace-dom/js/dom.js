@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let i = 0; i < spans.length; i++) {
     console.log(spans[i]);
   }
-  let paragraph = document.querySelector("p");
-  paragraph.innerText = "Dnes máme v nabídce:";
+  // let paragraph = document.querySelector("p");
+  // paragraph.innerText = "Dnes máme v nabídce:";
   let hiddenText = document.querySelectorAll("p");
   console.log(hiddenText[1].innerText);
   console.log(hiddenText[1].textContent);
@@ -37,4 +37,26 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log(image.hasAttribute("alt")); // Nyní vrátí true
   let firstListItem = document.querySelector("li");
   firstListItem.setAttribute("class", "important");
+  let headerElements = document.querySelector("header");
+  console.log(headerElements.childNodes);
+  let paragraph = document.createElement("div");
+  paragraph.textContent =
+    "Každý den po 16:00 poskytujeme na veškerý sortiment 50% slevu.";
+  let parent = document.getElementById("info");
+  parent.appendChild(paragraph);
+  document.body.appendChild(paragraph);
+  let heading = document.createElement("h2");
+  heading.textContent = "Aktuality:";
+  let element = document.getElementsByTagName("div");
+  document.body.insertBefore(heading, element[0]);
+  let styledHeading = document.querySelector("h2");
+  styledHeading.setAttribute("class", "important");
+  let newParagraph = document.createElement("p");
+  let strongElement = document.createElement("strong");
+  strongElement.textContent = "Novinky z naší pekárny:";
+  newParagraph.appendChild(strongElement);
+  document.body.replaceChild(newParagraph, heading);
+  newParagraph.removeChild(strongElement);
+  let lidi = ["Petr Novák", "Jana Čechová", "Petr Nejedlý"];
+  console.table(lidi)
 });
